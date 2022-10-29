@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.servers-list-container {
+	.list-heading {
+		display: flex;
+		justify-content: space-between;
+		color: $c_grey1;
+		font-size: 14px;
+		font-weight: 300;
+		padding: 20px 10px;
+		background-color: $c_white2;
+		border-top: 3px solid $c_white3;
+		border-bottom: 3px solid $c_white3;
+	}
+
+	.loading-container {
+		margin: 0 auto;
+		width: fit-content;
+	}
+
+	.pagination-container {
+		display: flex;
+		justify-content: space-between;
+		margin: 15px auto 10px auto;
+		width: 400px;
+		font-size: 14px;
+
+		@media (max-width: 485px) {
+			width: 300px;
+		}
+
+		li {
+			cursor: pointer;
+			list-style: none;
+			transition: all 0.2s;
+
+			&:hover {
+				color: $c_green_light3;
+			}
+		}
+
+		.active {
+			color: $c_green_light3;
+			border-bottom: 1px solid $c_green_light3;
+		}
+	}
+}

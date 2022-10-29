@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.single-server-container {
+	border-bottom: 3px solid $c_white3;
+
+	.server-content {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 10px;
+		color: $c_grey2;
+	}
+}

@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 20px 40px 20px;
+
+	.logout {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 30px;
+		width: 102px;
+		border: none;
+		cursor: pointer;
+		color: $c_blue_dark1;
+		background-color: $c_white1;
+		font-size: 14px;
+		border-radius: 5px;
+		transition: all 0.2s;
+
+		&:hover {
+			color: $c_white1;
+			background-color: $c_green_light1;
+		}
+	}
+}

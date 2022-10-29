@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.error-field-container {
+	width: 100%;
+	margin-bottom: 10px;
+	color: $c_red;
+	background-color: $c_white1;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 2px solid $c_red;
+	text-align: center;
+}

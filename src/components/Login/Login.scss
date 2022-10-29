@@ -1,0 +1,83 @@
+@import '../../styles/variables.scss';
+
+.login-container {
+	background-color: $c_blue_dark2;
+	background-image: url('../../assets/login-background.svg');
+	background-position: center;
+	height: 100vh;
+
+	.logo-icon {
+		display: block;
+		margin: 0 auto;
+		padding-top: 150px;
+		padding-bottom: 80px;
+	}
+
+	.login-error {
+		margin: 0 auto;
+		width: 363px;
+
+		@media (max-width: 485px) {
+			width: 70%;
+		}
+	}
+
+	.login-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		width: 363px;
+		height: 210px;
+
+		@media (max-width: 485px) {
+			width: 70%;
+		}
+
+		.input {
+			box-sizing: border-box;
+			width: 100%;
+			height: 58px;
+			padding-left: 45px;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			color: $c_grey3;
+
+			&:focus {
+				color: $c_grey4;
+			}
+		}
+
+		.username-input {
+			background-image: url('../../assets/username.svg');
+			background-position-y: center;
+			background-position-x: 20px;
+			background-repeat: no-repeat;
+		}
+
+		.password-input {
+			background-image: url('../../assets/password.svg');
+			background-position-y: center;
+			background-position-x: 20px;
+			background-repeat: no-repeat;
+		}
+
+		.button {
+			width: 100%;
+			height: 58px;
+			border-radius: 5px;
+			color: $c_white1;
+			background-color: $c_green_light2;
+			cursor: pointer;
+			border: none;
+			font-weight: 700;
+			transition: all 0.2s;
+
+			&:hover {
+				background-color: $c_green_light3;
+			}
+		}
+	}
+}
